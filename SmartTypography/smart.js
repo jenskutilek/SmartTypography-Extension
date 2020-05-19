@@ -52,8 +52,8 @@ function replaceText (lang, node) {
     // apostrophe is the same for any language
     value = value.replace(/(\w)['´`](\w)['´`](\w)/gi, '$1’$2’$3')
     value = value.replace(/(\w)['´`](\w)/gi, '$1’$2')
-    value = value.replace('CO2', 'CO₂')
-    value = value.replace('H2O', 'H₂O')
+    value = value.replace(/CO2/g, 'CO₂')
+    value = value.replace(/H2O/g, 'H₂O')
 
     let openDoubleQuote, openSingleQuote, closeDoubleQuote, closeSingleQuote, enDash
     switch (lang) {
