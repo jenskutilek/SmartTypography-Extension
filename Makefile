@@ -5,7 +5,7 @@ EXTDIR = SmartTypography
 
 all: $(DISTDIR)/Chrome/$(ARCHIVE)
 
-$(DISTDIR)/$(ARCHIVE):
+$(DISTDIR)/Chrome/$(ARCHIVE):
 	rm -f $(DISTDIR)/Chrome/$(ARCHIVE)
 	zip -r $(DISTDIR)/Chrome/$(ARCHIVE) $(EXTDIR)/ --exclude "*.DS_Store" "*Makefile"
 
