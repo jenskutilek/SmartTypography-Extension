@@ -1,18 +1,5 @@
 /* jshint esversion: 6 */
 
-const ignoreElements = [
-  'CODE',
-  'KBD',
-  'INPUT',
-  'MATH',
-  'PRE',
-  'SAMP',
-  'TEXTAREA',
-  'TT',
-  'VAR'
-]
-
-// var elementsInsideBody = [...document.body.getElementsByTagName('*')]
 var elementsInsideBody = [...document.body.querySelectorAll('a, dl, dt, h1, h2, h3, h4, h5, h6, li, p')]
 
 function findLanguage (el) {
@@ -30,16 +17,10 @@ function findLanguage (el) {
 
 function findAndReplace () {
   elementsInsideBody.forEach(element => {
-    // console.log(element.nodeName)
-    if (!ignoreElements.includes(element.nodeName)) {
-      const lang = findLanguage(element)
-      element.childNodes.forEach(child => {
-        // console.log(child)
-        replaceText(lang, child)
-      })
-    } else {
-      // console.log("  ignore")
-    }
+    const lang = findLanguage(element)
+    element.childNodes.forEach(child => {
+      replaceText(lang, child)
+    })
   })
 }
 
