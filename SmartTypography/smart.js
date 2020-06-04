@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
 
-var elementsInsideBody = [...document.body.querySelectorAll('a, dl, dt, h1, h2, h3, h4, h5, h6, li, p')]
+var elementsInsideBody = [...document.body.querySelectorAll('a, div, dl, dt, h1, h2, h3, h4, h5, h6, li, p')]
 
 function findLanguage (el) {
   if (el.hasAttribute('lang')) {
@@ -15,12 +15,23 @@ function findLanguage (el) {
   return null
 }
 
+function replaceInChildren (element, lang) {
+  element.childNodes.forEach(child => {
+    if (
+      child.childNodes &&
+      child.nodeName === 'SPAN'
+    ) {
+      const lang = findLanguage(child)
+      replaceInChildren(child, lang)
+    }
+    replaceText(lang, child)
+  })
+}
+
 function findAndReplace () {
   elementsInsideBody.forEach(element => {
     const lang = findLanguage(element)
-    element.childNodes.forEach(child => {
-      replaceText(lang, child)
-    })
+    replaceInChildren(element, lang)
   })
 }
 
