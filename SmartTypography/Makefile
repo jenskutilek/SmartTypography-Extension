@@ -2,13 +2,13 @@ ARCHIVE = SmartTypography.zip
 DISTDIR = ../dist
 EXTDIR = SmartTypography
 
-all: $(DISTDIR)/Chrome/$(ARCHIVE)
 
-$(DISTDIR)/Chrome/$(ARCHIVE):
-	rm -f $(DISTDIR)/Chrome/$(ARCHIVE)
-	zip -r $(DISTDIR)/Chrome/$(ARCHIVE) . --exclude "*.DS_Store" "*Makefile"
+all: $(DISTDIR)/$(ARCHIVE)
 
-clean:
-	rm -f $(DISTDIR)/Chrome/$(ARCHIVE)
 
-.PHONY: all clean
+$(DISTDIR)/$(ARCHIVE):
+	rm -f $(DISTDIR)/$(ARCHIVE)
+	zip -r $(DISTDIR)/$(ARCHIVE) . --exclude "*.DS_Store" "*Makefile"
+
+
+.PHONY: all
