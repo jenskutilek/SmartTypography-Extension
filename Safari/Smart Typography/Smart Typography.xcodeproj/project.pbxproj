@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0CA46A9248D3D320022FBE0 /* Smart_Typography.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C0CA46A8248D3D320022FBE0 /* Smart_Typography.entitlements */; };
+		C0CA46AB248D3D320022FBE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA46AA248D3D320022FBE0 /* AppDelegate.swift */; };
+		C0CA46AE248D3D320022FBE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CA46AC248D3D320022FBE0 /* Main.storyboard */; };
+		C0CA46B0248D3D320022FBE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA46AF248D3D320022FBE0 /* ViewController.swift */; };
+		C0CA46B2248D3D340022FBE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CA46B1248D3D340022FBE0 /* Assets.xcassets */; };
+		C0CA46BD248D3D340022FBE0 /* Smart_TypographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA46BC248D3D340022FBE0 /* Smart_TypographyTests.swift */; };
+		C0CA46C8248D3D340022FBE0 /* Smart_TypographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA46C7248D3D340022FBE0 /* Smart_TypographyUITests.swift */; };
+		C0CA46CF248D3D340022FBE0 /* Smart Typography Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0CA46CE248D3D340022FBE0 /* Smart Typography Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0CA46D4248D3D340022FBE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CA46D3248D3D340022FBE0 /* Cocoa.framework */; };
+		C0CA46D7248D3D340022FBE0 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA46D6248D3D340022FBE0 /* SafariExtensionHandler.swift */; };
+		C0CA46D9248D3D340022FBE0 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA46D8248D3D340022FBE0 /* SafariExtensionViewController.swift */; };
+		C0CA46DC248D3D340022FBE0 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0CA46DA248D3D340022FBE0 /* SafariExtensionViewController.xib */; };
+		C0CA46DF248D3D340022FBE0 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = C0CA46DE248D3D340022FBE0 /* script.js */; };
+		C0CA46E1248D3D340022FBE0 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C0CA46E0248D3D340022FBE0 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0CA46B9248D3D340022FBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CA469D248D3D320022FBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CA46A4248D3D320022FBE0;
+			remoteInfo = "Smart Typography";
+		};
+		C0CA46C4248D3D340022FBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CA469D248D3D320022FBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CA46A4248D3D320022FBE0;
+			remoteInfo = "Smart Typography";
+		};
+		C0CA46D0248D3D340022FBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CA469D248D3D320022FBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CA46CD248D3D340022FBE0;
+			remoteInfo = "Smart Typography Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0CA46E8248D3D340022FBE0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0CA46CF248D3D340022FBE0 /* Smart Typography Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C0CA46A5248D3D320022FBE0 /* Smart Typography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Typography.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CA46A8248D3D320022FBE0 /* Smart_Typography.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smart_Typography.entitlements; sourceTree = "<group>"; };
+		C0CA46AA248D3D320022FBE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0CA46AD248D3D320022FBE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0CA46AF248D3D320022FBE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0CA46B1248D3D340022FBE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0CA46B3248D3D340022FBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CA46B8248D3D340022FBE0 /* Smart TypographyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart TypographyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CA46BC248D3D340022FBE0 /* Smart_TypographyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_TypographyTests.swift; sourceTree = "<group>"; };
+		C0CA46BE248D3D340022FBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CA46C3248D3D340022FBE0 /* Smart TypographyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart TypographyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CA46C7248D3D340022FBE0 /* Smart_TypographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_TypographyUITests.swift; sourceTree = "<group>"; };
+		C0CA46C9248D3D340022FBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CA46CE248D3D340022FBE0 /* Smart Typography Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Smart Typography Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CA46D3248D3D340022FBE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C0CA46D6248D3D340022FBE0 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		C0CA46D8248D3D340022FBE0 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		C0CA46DB248D3D340022FBE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		C0CA46DD248D3D340022FBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CA46DE248D3D340022FBE0 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		C0CA46E0248D3D340022FBE0 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		C0CA46E2248D3D340022FBE0 /* Smart_Typography_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smart_Typography_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0CA46A2248D3D320022FBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46B5248D3D340022FBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46C0248D3D340022FBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46CB248D3D340022FBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46D4248D3D340022FBE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0CA469C248D3D320022FBE0 = {
+			isa = PBXGroup;
+			children = (
+				C0CA46A7248D3D320022FBE0 /* Smart Typography */,
+				C0CA46BB248D3D340022FBE0 /* Smart TypographyTests */,
+				C0CA46C6248D3D340022FBE0 /* Smart TypographyUITests */,
+				C0CA46D5248D3D340022FBE0 /* Smart Typography Extension */,
+				C0CA46D2248D3D340022FBE0 /* Frameworks */,
+				C0CA46A6248D3D320022FBE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0CA46A6248D3D320022FBE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA46A5248D3D320022FBE0 /* Smart Typography.app */,
+				C0CA46B8248D3D340022FBE0 /* Smart TypographyTests.xctest */,
+				C0CA46C3248D3D340022FBE0 /* Smart TypographyUITests.xctest */,
+				C0CA46CE248D3D340022FBE0 /* Smart Typography Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0CA46A7248D3D320022FBE0 /* Smart Typography */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA46A8248D3D320022FBE0 /* Smart_Typography.entitlements */,
+				C0CA46AA248D3D320022FBE0 /* AppDelegate.swift */,
+				C0CA46AC248D3D320022FBE0 /* Main.storyboard */,
+				C0CA46AF248D3D320022FBE0 /* ViewController.swift */,
+				C0CA46B1248D3D340022FBE0 /* Assets.xcassets */,
+				C0CA46B3248D3D340022FBE0 /* Info.plist */,
+			);
+			path = "Smart Typography";
+			sourceTree = "<group>";
+		};
+		C0CA46BB248D3D340022FBE0 /* Smart TypographyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA46BC248D3D340022FBE0 /* Smart_TypographyTests.swift */,
+				C0CA46BE248D3D340022FBE0 /* Info.plist */,
+			);
+			path = "Smart TypographyTests";
+			sourceTree = "<group>";
+		};
+		C0CA46C6248D3D340022FBE0 /* Smart TypographyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA46C7248D3D340022FBE0 /* Smart_TypographyUITests.swift */,
+				C0CA46C9248D3D340022FBE0 /* Info.plist */,
+			);
+			path = "Smart TypographyUITests";
+			sourceTree = "<group>";
+		};
+		C0CA46D2248D3D340022FBE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA46D3248D3D340022FBE0 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0CA46D5248D3D340022FBE0 /* Smart Typography Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA46D6248D3D340022FBE0 /* SafariExtensionHandler.swift */,
+				C0CA46D8248D3D340022FBE0 /* SafariExtensionViewController.swift */,
+				C0CA46DA248D3D340022FBE0 /* SafariExtensionViewController.xib */,
+				C0CA46DD248D3D340022FBE0 /* Info.plist */,
+				C0CA46DE248D3D340022FBE0 /* script.js */,
+				C0CA46E0248D3D340022FBE0 /* ToolbarItemIcon.pdf */,
+				C0CA46E2248D3D340022FBE0 /* Smart_Typography_Extension.entitlements */,
+			);
+			path = "Smart Typography Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0CA46A4248D3D320022FBE0 /* Smart Typography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CA46E9248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart Typography" */;
+			buildPhases = (
+				C0CA46A1248D3D320022FBE0 /* Sources */,
+				C0CA46A2248D3D320022FBE0 /* Frameworks */,
+				C0CA46A3248D3D320022FBE0 /* Resources */,
+				C0CA46E8248D3D340022FBE0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CA46D1248D3D340022FBE0 /* PBXTargetDependency */,
+			);
+			name = "Smart Typography";
+			productName = "Smart Typography";
+			productReference = C0CA46A5248D3D320022FBE0 /* Smart Typography.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0CA46B7248D3D340022FBE0 /* Smart TypographyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CA46EC248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart TypographyTests" */;
+			buildPhases = (
+				C0CA46B4248D3D340022FBE0 /* Sources */,
+				C0CA46B5248D3D340022FBE0 /* Frameworks */,
+				C0CA46B6248D3D340022FBE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CA46BA248D3D340022FBE0 /* PBXTargetDependency */,
+			);
+			name = "Smart TypographyTests";
+			productName = "Smart TypographyTests";
+			productReference = C0CA46B8248D3D340022FBE0 /* Smart TypographyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0CA46C2248D3D340022FBE0 /* Smart TypographyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CA46EF248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart TypographyUITests" */;
+			buildPhases = (
+				C0CA46BF248D3D340022FBE0 /* Sources */,
+				C0CA46C0248D3D340022FBE0 /* Frameworks */,
+				C0CA46C1248D3D340022FBE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CA46C5248D3D340022FBE0 /* PBXTargetDependency */,
+			);
+			name = "Smart TypographyUITests";
+			productName = "Smart TypographyUITests";
+			productReference = C0CA46C3248D3D340022FBE0 /* Smart TypographyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C0CA46CD248D3D340022FBE0 /* Smart Typography Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CA46E5248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart Typography Extension" */;
+			buildPhases = (
+				C0CA46CA248D3D340022FBE0 /* Sources */,
+				C0CA46CB248D3D340022FBE0 /* Frameworks */,
+				C0CA46CC248D3D340022FBE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Typography Extension";
+			productName = "Smart Typography Extension";
+			productReference = C0CA46CE248D3D340022FBE0 /* Smart Typography Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0CA469D248D3D320022FBE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jens Kutilek";
+				TargetAttributes = {
+					C0CA46A4248D3D320022FBE0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C0CA46B7248D3D340022FBE0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C0CA46A4248D3D320022FBE0;
+					};
+					C0CA46C2248D3D340022FBE0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C0CA46A4248D3D320022FBE0;
+					};
+					C0CA46CD248D3D340022FBE0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = C0CA46A0248D3D320022FBE0 /* Build configuration list for PBXProject "Smart Typography" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0CA469C248D3D320022FBE0;
+			productRefGroup = C0CA46A6248D3D320022FBE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0CA46A4248D3D320022FBE0 /* Smart Typography */,
+				C0CA46B7248D3D340022FBE0 /* Smart TypographyTests */,
+				C0CA46C2248D3D340022FBE0 /* Smart TypographyUITests */,
+				C0CA46CD248D3D340022FBE0 /* Smart Typography Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0CA46A3248D3D320022FBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46A9248D3D320022FBE0 /* Smart_Typography.entitlements in Resources */,
+				C0CA46B2248D3D340022FBE0 /* Assets.xcassets in Resources */,
+				C0CA46AE248D3D320022FBE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46B6248D3D340022FBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46C1248D3D340022FBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46CC248D3D340022FBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46E1248D3D340022FBE0 /* ToolbarItemIcon.pdf in Resources */,
+				C0CA46DC248D3D340022FBE0 /* SafariExtensionViewController.xib in Resources */,
+				C0CA46DF248D3D340022FBE0 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0CA46A1248D3D320022FBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46B0248D3D320022FBE0 /* ViewController.swift in Sources */,
+				C0CA46AB248D3D320022FBE0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46B4248D3D340022FBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46BD248D3D340022FBE0 /* Smart_TypographyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46BF248D3D340022FBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46C8248D3D340022FBE0 /* Smart_TypographyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CA46CA248D3D340022FBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA46D9248D3D340022FBE0 /* SafariExtensionViewController.swift in Sources */,
+				C0CA46D7248D3D340022FBE0 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0CA46BA248D3D340022FBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CA46A4248D3D320022FBE0 /* Smart Typography */;
+			targetProxy = C0CA46B9248D3D340022FBE0 /* PBXContainerItemProxy */;
+		};
+		C0CA46C5248D3D340022FBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CA46A4248D3D320022FBE0 /* Smart Typography */;
+			targetProxy = C0CA46C4248D3D340022FBE0 /* PBXContainerItemProxy */;
+		};
+		C0CA46D1248D3D340022FBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CA46CD248D3D340022FBE0 /* Smart Typography Extension */;
+			targetProxy = C0CA46D0248D3D340022FBE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0CA46AC248D3D320022FBE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0CA46AD248D3D320022FBE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0CA46DA248D3D340022FBE0 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0CA46DB248D3D340022FBE0 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0CA46E3248D3D340022FBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0CA46E4248D3D340022FBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C0CA46E6248D3D340022FBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Smart Typography Extension/Smart_Typography_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart Typography Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-Typography-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C0CA46E7248D3D340022FBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Smart Typography Extension/Smart_Typography_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart Typography Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-Typography-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		C0CA46EA248D3D340022FBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Smart Typography/Smart_Typography.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart Typography/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-Typography";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C0CA46EB248D3D340022FBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Smart Typography/Smart_Typography.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart Typography/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-Typography";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		C0CA46ED248D3D340022FBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart TypographyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-TypographyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Typography.app/Contents/MacOS/Smart Typography";
+			};
+			name = Debug;
+		};
+		C0CA46EE248D3D340022FBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart TypographyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-TypographyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Typography.app/Contents/MacOS/Smart Typography";
+			};
+			name = Release;
+		};
+		C0CA46F0248D3D340022FBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart TypographyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-TypographyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Smart Typography";
+			};
+			name = Debug;
+		};
+		C0CA46F1248D3D340022FBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SAC9KRL77;
+				INFOPLIST_FILE = "Smart TypographyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kutilek.Smart-TypographyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Smart Typography";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0CA46A0248D3D320022FBE0 /* Build configuration list for PBXProject "Smart Typography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CA46E3248D3D340022FBE0 /* Debug */,
+				C0CA46E4248D3D340022FBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CA46E5248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart Typography Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CA46E6248D3D340022FBE0 /* Debug */,
+				C0CA46E7248D3D340022FBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CA46E9248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart Typography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CA46EA248D3D340022FBE0 /* Debug */,
+				C0CA46EB248D3D340022FBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CA46EC248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart TypographyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CA46ED248D3D340022FBE0 /* Debug */,
+				C0CA46EE248D3D340022FBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CA46EF248D3D340022FBE0 /* Build configuration list for PBXNativeTarget "Smart TypographyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CA46F0248D3D340022FBE0 /* Debug */,
+				C0CA46F1248D3D340022FBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0CA469D248D3D320022FBE0 /* Project object */;
+}
