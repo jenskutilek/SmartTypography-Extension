@@ -107,6 +107,18 @@ function replaceText (lang, node) {
         closeSingleQuote = '›'
         enDash = ' – '
         break
+      case 'fr':
+      case 'fr-BE':
+      case 'fr-CH':
+      case 'fr-FR':
+      case 'fr-LU':
+      case 'fr-MC':
+        openDoubleQuote = '« '
+        openSingleQuote = '‹ '
+        closeDoubleQuote = ' »'
+        closeSingleQuote = ' ›'
+        enDash = ' – '
+        break
       default:
         openDoubleQuote = '“'
         openSingleQuote = '‘'
