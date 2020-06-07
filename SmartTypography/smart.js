@@ -92,6 +92,8 @@ function replaceText (lang, node) {
       case 'de':
       case 'de-AT':
       case 'de-DE':
+      case 'de-LI':
+      case 'de-LU':
         openDoubleQuote = '„'
         openSingleQuote = '‚'
         closeDoubleQuote = '“'
