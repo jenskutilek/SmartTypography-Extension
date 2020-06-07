@@ -1,5 +1,6 @@
 /* jshint esversion: 6 */
 
+let openDoubleQuote, openSingleQuote, closeDoubleQuote, closeSingleQuote, enDash
 
 function findLanguage (el) {
   if (el.hasAttribute('lang')) {
@@ -65,7 +66,6 @@ function replaceText (lang, node) {
     value = value.replace(/CO2/g, 'CO₂')
     value = value.replace(/H2O/g, 'H₂O')
 
-    let openDoubleQuote, openSingleQuote, closeDoubleQuote, closeSingleQuote, enDash
     switch (lang) {
       case 'de':
       case 'de-AT':
