@@ -1,6 +1,5 @@
 /* jshint esversion: 6 */
 
-var elementsInsideBody = [...document.body.querySelectorAll('a, div, dl, dt, h1, h2, h3, h4, h5, h6, li, p')]
 
 function findLanguage (el) {
   if (el.hasAttribute('lang')) {
@@ -100,4 +99,9 @@ function replaceText (lang, node) {
   }
 }
 
-window.onload = findAndReplace()
+// document.addEventListener('DOMContentLoaded', function (event) {
+const elementsInsideBody = [
+  ...document.body.querySelectorAll('a, b, div, dl, dt, em, h1, h2, h3, h4, h5, h6, i, li, p, strong')
+]
+findAndReplace(elementsInsideBody)
+// })
