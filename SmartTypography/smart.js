@@ -52,10 +52,16 @@ function findAndReplace (elements) {
 }
 
 function replaceOpenDoubleQuote (text, char) {
+  if ((text.match(doubleQuoteRegex) || []).length === 1) {
+    return text.replace(doubleQuoteRegex, '”')
+  }
   return text.replace(openDoubleQuoteRegex, `$1${char}`)
 }
 
 function replaceOpenSingleQuote (text, char) {
+  if ((text.match(singleQuoteRegex) || []).length === 1) {
+    return text.replace(singleQuoteRegex, '’')
+  }
   return text.replace(openSingleQuoteRegex, `$1${char}`)
 }
 
