@@ -28,8 +28,8 @@ function replaceInChildren (element, lang) {
   })
 }
 
-function findAndReplace () {
-  elementsInsideBody.forEach(element => {
+function findAndReplace (elements) {
+  elements.forEach(element => {
     const lang = findLanguage(element)
     replaceInChildren(element, lang)
   })
