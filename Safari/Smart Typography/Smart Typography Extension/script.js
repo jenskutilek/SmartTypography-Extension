@@ -135,14 +135,7 @@ function replaceText (lang, node) {
 
 if (window.top === window) {
   document.addEventListener('DOMContentLoaded', function (event) {
-    console.log('SmartTypography 2 running...')
-    var newElement = document.createElement('span');
-    newElement.src = "Bla"
-    newElement.text = 'Hello'
-    document.body.insertBefore(
-      newElement,
-      document.body.firstChild
-    )
+    // console.log('SmartTypography 2 running...')
     const elementsInsideBody = [
       ...document.body.querySelectorAll('a, b, div, dl, dt, em, h1, h2, h3, h4, h5, h6, i, li, p, strong')
     ]
