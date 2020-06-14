@@ -81,7 +81,7 @@
 		C0CA46D8248D3D340022FBE0 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		C0CA46DB248D3D340022FBE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		C0CA46DD248D3D340022FBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0CA46DE248D3D340022FBE0 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		C0CA46DE248D3D340022FBE0 /* script.js */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		C0CA46E0248D3D340022FBE0 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		C0CA46E2248D3D340022FBE0 /* Smart_Typography_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smart_Typography_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
