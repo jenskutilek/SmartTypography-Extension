@@ -132,10 +132,21 @@ function replaceText (lang, node) {
     node.nodeValue = value
   }
 }
-            
-document.addEventListener('load', function (event) {
-  const elementsInsideBody = [
-    ...document.body.querySelectorAll('a, b, div, dl, dt, em, h1, h2, h3, h4, h5, h6, i, li, p, strong')
-  ]
-  findAndReplace(elementsInsideBody)
-})
+
+if (window.top === window) {
+  document.addEventListener('DOMContentLoaded', function (event) {
+    console.log('SmartTypography 2 running...')
+    var newElement = document.createElement('span');
+    newElement.src = "Bla"
+    newElement.text = 'Hello'
+    document.body.insertBefore(
+      newElement,
+      document.body.firstChild
+    )
+    const elementsInsideBody = [
+      ...document.body.querySelectorAll('a, b, div, dl, dt, em, h1, h2, h3, h4, h5, h6, i, li, p, strong')
+    ]
+    findAndReplace(elementsInsideBody)
+  })
+}
+
