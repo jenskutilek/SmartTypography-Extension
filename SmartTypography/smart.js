@@ -5,9 +5,9 @@ const doubleQuoteRegex = /"/g
 
 const openDoubleQuoteRegex = /(\s|^|\()"/gi
 const openSingleQuoteRegex = /(\s|^|\()'/gi
-const closeDoubleQuoteRegex1 = /(\w|[!?.,]|'|\))"/gi
+const closeDoubleQuoteRegex1 = /(\w|[!?.…,–—]|'|\))"/gi
+const closeSingleQuoteRegex1 = /(\w|[!?.…,–—]|"|\))'/gi
 const closeDoubleQuoteRegex2 = /"[$,]/gi
-const closeSingleQuoteRegex1 = /(\w|"|\))'/gi
 const closeSingleQuoteRegex2 = /'[$,]/gi
 const enDashRegex = /( - |--)/gi
 
