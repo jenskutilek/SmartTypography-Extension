@@ -1,26 +1,26 @@
 {
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*/*",
-        "file:///*"
-      ],
-      "js": ["smart.js"],
-      "run_at":"document_end"
-    }
-  ],
-  "description": "Improve the typography of any website by using proper quotation marks and dashes.",
-  "icons": {
-    "16": "images/icon16.png",
-    "32": "images/icon32.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
-  },
-  "manifest_version": 3,
-  "name": "Smart Typography",
-  "host_permissions": [
-    "*://*/*",
-    "file:///*"
-  ],
-  "version": "0.4.0"
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{72a4c3dc-174e-481a-92bf-e9cfa9c204a2}",
+            "strict_min_version": "109.0"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*", "file:///*"],
+            "js": ["smart.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "description": "Improve the typography of any website by using proper quotation marks and dashes.",
+    "host_permissions": ["*://*/*", "file:///*"],
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 3,
+    "name": "Smart Typography",
+    "version": "0.4.1"
 }
